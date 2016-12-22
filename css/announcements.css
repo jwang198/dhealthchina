@@ -1,0 +1,15 @@
+section:nth-of-type(even) {
+  background-color: #f7f7f7;
+}
+section:nth-of-type(odd) {
+  /*background-color: #f7f7f7;*/
+}
+#announcements .card .time {
+  border-bottom: 1px solid #c12942;
+  font-size: 20px;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+#announcements .card .text {
+  font-size: 22px;
+}

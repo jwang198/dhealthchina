@@ -1,0 +1,68 @@
+$baseline: 1rem;
+$opensans: 'Open Sans', sans-serif;
+
+.container-bg{
+  background-color: blue;
+}
+
+.main-header{
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: $baseline 0;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  border-bottom: 1px solid red;
+  line-height: 0.9;
+  
+  .wrapper{
+    margin: 0 auto;
+    max-width: 75 * $baseline;
+  }
+  
+  .logo{
+    display: inline-block;
+    padding-left: $baseline;
+    img{
+    max-width: 3.5rem; 
+    }
+  } //logo end
+  .main-nav{
+    float: right;
+    padding-right: $baseline;
+    ul{
+      list-style-type: none;
+      li{
+        display: inline;
+        a{
+          margin-left: $baseline;
+          font-family: $opensans;
+          color: white;
+          font-size: 0.975rem;
+          letter-spacing: 2px;
+          text-transform: uppercase;
+          text-decoration: none;
+          padding-bottom: $baseline / 2;
+          transition: color 0.3s ease-in-out;
+            
+          &:hover{
+            color: RGBA(226, 3, 46, 1);
+            border-bottom: 2px RGBA(226, 3, 46, 1) solid;
+              &:nth-child(2n){
+                 color: RGBA(244, 201, 0, 1);
+                border-bottom: 2px RGBA(244, 201, 0, 1) solid;
+              }
+              &:nth-child(3n){
+                color: RGBA(0, 179, 168, 1);
+                border-bottom: 2px RGBA(0, 179, 168, 1) solid;
+              }
+              &:nth-child(4n){
+                color: RGBA(57, 120, 187, 1);
+                border-bottom: 2px RGBA(57, 120, 187, 1) solid;
+              }
+          } // hover end
+        } // a end
+      } // li end
+    } // ul end
+  } // main-nav end
+} // main-header end
+
