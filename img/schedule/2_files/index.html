@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<!-- saved from url=(0650)http://apps.wix.com/shoutout-get-subscriber-server-webapp/statics/index?cacheKiller=1482543416915&compId=ic667y8u&deviceType=desktop&instance=Qb3bacrF-9KFFH9LdXKw2mkVmrP5C8bYtL-BWAQZp28.eyJpbnN0YW5jZUlkIjoiMTNmMTZjZjYtYjc4My1lMWQ2LWEwOTQtOTQ4NjBmZTFmOGFjIiwic2lnbkRhdGUiOiIyMDE2LTEyLTI0VDAxOjM2OjU1LjY1NFoiLCJ1aWQiOm51bGwsImlwQW5kUG9ydCI6Ijg1LjIwMy4zNi40MC81NzU5NSIsInZlbmRvclByb2R1Y3RJZCI6bnVsbCwiZGVtb01vZGUiOmZhbHNlLCJhaWQiOiIyOTE5YmU0NC0xOGE2LTRmZDAtODc2Yi0zZDU2ZjQzZmY0OTMiLCJiaVRva2VuIjoiNzMwYTYxODYtZjE0My1hMDJhLTIyZDgtNzVkOGRkMmViOTQxIiwic2l0ZU93bmVySWQiOiIxNWQ4NjQ2Ni1mMWIzLTQ4NTctOGExNi04MTVkZjI3NjY5ZjkifQ&locale=en&viewMode=site&width=303 -->
+<html ng-app="shoutoutGetSubscriberApp" class="ng-scope"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>shoutoutGetSubscriber</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="referrer" content="origin">
+    <link type="image/png" href="http://www.wix.com/favicon.ico" rel="shortcut icon">
+    <link rel="stylesheet" href="./fontFace.css">
+    <!-- <link rel="stylesheet" href="//static.parastorage.com/services/shoutout-get-subscriber/1.95.0/bower_components/wix-ui-lib2/ui-lib.min.css"> -->
+    <!-- <link rel="stylesheet" href="//static.parastorage.com/services/shoutout-get-subscriber/1.95.0/bower_components/wix-style/dist/styles/style.min.css"> -->
+    <link rel="stylesheet" href="./font-awesome.css">
+
+    <!--  -->
+<link rel="stylesheet" href="./main.css">
+<!--  -->
+
+    <style wix-style="" type="text/css" ng-non-bindable="">
+
+      .app-container,
+      .upgrade-app-container {
+        background-color: rgba(192,193,174,1);
+        border-width: style.bordersSliderpx;
+        border-color: #E0E0C8;
+      }
+
+      .app-container.classic,
+      .app-container.strip {
+        border-radius: style.cornersSliderpx;
+      }
+
+      .classic .header-block {
+        background-color: #C0C1AE;
+        border-top-left-radius: style.cornersSliderpx;
+        border-top-right-radius: style.cornersSliderpx;
+      }
+
+      .app-container.elegant,
+      .upgrade-app-container {
+        background-color: rgba(192,193,174,1);
+        border-bottom-left-radius: style.cornersSliderpx;
+        border-bottom-right-radius: style.cornersSliderpx;
+      }
+
+      .app-container.headline,
+      .upgrade-app-container {
+        background-color: rgba(192,193,174,1);
+        border-bottom-left-radius: style.cornersSliderpx;
+        border-bottom-right-radius: style.cornersSliderpx;
+        border-width: style.bordersSliderpx;
+        border-color: #E0E0C8;
+      }
+
+      .name-label,
+      .country-code,
+      .phone-number-label,
+      .email-label,
+      .field-description-label {
+        color: rgba(0,136,203,1);
+        font:normal normal normal 14px/1.4em spinnaker,sans-serif;;
+      }
+
+      .name-block,
+      .prefix-block,
+      .email-block,
+      .phone-input-block {
+        border-width: style.linesSliderpx;
+        border-color: #E0E0C8;
+        background-color: #C0C1AE;
+        color: #C1E0D9;
+        font:normal normal normal 14px/1.4em spinnaker,sans-serif;;
+      }
+
+      .postcard .email-block,
+      .postcard .name-block {
+        border-width: style.linesSliderpx;
+        border-color: #E0E0C8;
+      }
+
+      .postcard.app-container::before {
+        background-color: rgba(192,193,174,1);
+      }
+
+      .prefix-block {
+        font:normal normal normal 14px/1.4em spinnaker,sans-serif;;
+      }
+      .prefix {
+        font:normal normal normal 14px/1.4em spinnaker,sans-serif;;
+        color: #C1E0D9;
+        background-color: #C0C1AE;
+      }
+
+      .select-icon {
+        font-size: inherit;
+        color: #C1E0D9;
+      }
+
+      .user-icon,
+      .phone-icon,
+      .email-icon {
+        font-size: inherit;
+        color: #E0E0C8;
+      }
+
+      input::-ms-clear,
+      input::-ms-reveal {
+        display: none;
+      }
+
+      .name-input,
+      .phone-number-input,
+      .email-input[type=email] {
+        color: #C1E0D9;
+        font:normal normal normal 14px/1.4em spinnaker,sans-serif;;
+      }
+
+      .name-input::-webkit-input-placeholder,
+      .phone-number-input::-webkit-input-placeholder,
+      .email-input[type=email]::-webkit-input-placeholder {
+        color: #C1E0D9;
+        font:normal normal normal 14px/1.4em spinnaker,sans-serif;;
+      }
+
+      .name-input:-ms-input-placeholder,
+      .phone-number-input:-ms-input-placeholder,
+      .email-input[type=email]:-ms-input-placeholder {
+        color: #C1E0D9;
+        font:normal normal normal 14px/1.4em spinnaker,sans-serif;;
+      }
+
+      .name-input::-moz-input-placeholder,
+      .phone-number-input::-moz-input-placeholder,
+      .email-input[type=email]:-moz-input-placeholder {
+        color: #C1E0D9;
+        font:normal normal normal 14px/1.4em spinnaker,sans-serif;;
+      }
+
+      .title-row {
+        color: rgba(237,28,36,1);
+        font:normal normal bold 15px/1.4em spinnaker,sans-serif;;
+      }
+
+      .subtitle-row {
+        color: rgba(0,0,0,1);
+        font:normal normal bold 15px/1.4em spinnaker,sans-serif;;
+
+      }
+      .classic .subscribe-button,
+      .strip .subscribe-button,
+      .postcard .subscribe-button,
+      .elegant .subscribe-button,
+      .headline .subscribe-button,
+      .classic .success-back-to-editor,
+      .strip .success-back-to-editor,
+      .postcard .success-back-to-editor,
+      .elegant .success-back-to-editor,
+      .headline .success-back-to-editor {
+        background-color: rgba(0,0,0,1) !important;
+        border-color: #5FA192;
+        border-width: style.linesSliderpx;
+        color: rgba(255,255,255,1);
+        font:normal normal normal 14px/1.4em spinnaker,sans-serif;;
+      }
+
+      .app-container.in-popup {
+        background-color: #5C5E52;
+      }
+
+      .upgrade-app-text {
+        font:normal normal normal 14px/1.4em spinnaker,sans-serif;;
+        color: rgba(237,28,36,1);
+      }
+
+      .success-view-title {
+        color: rgba(237,28,36,1);
+        font:normal normal bold 15px/1.4em spinnaker,sans-serif;;
+      }
+
+      .success-view-subtitle {
+        color: rgba(237,28,36,1);
+        font:normal normal bold 15px/1.4em spinnaker,sans-serif;;
+      }
+
+      .close-popup {
+        color: #5FA192;
+        text-shadow: rgba(237,28,36,1);
+      }
+
+    </style>
+
+    
+    <!-- MixPanel Analytics -->
+    <script type="text/javascript" async="" src="./mixpanel-2.2.min.js"></script><script type="text/javascript">
+        (function (e, b) {
+            if (!b.__SV) {
+                var a, f, i, g;
+                window.mixpanel = b;
+                b._i = [];
+                b.init = function (a, e, d) {
+                    function f(b, h) {
+                        var a = h.split(".");
+                        2 == a.length && (b = b[a[0]], h = a[1]);
+                        b[h] = function () {
+                            b.push([h].concat(Array.prototype.slice.call(arguments, 0)))
+                        }
+                    }
+
+                    var c = b;
+                    "undefined" !== typeof d ? c = b[d] = [] : d = "mixpanel";
+                    c.people = c.people || [];
+                    c.toString = function (b) {
+                        var a = "mixpanel";
+                        "mixpanel" !== d && (a += "." + d);
+                        b || (a += " (stub)");
+                        return a
+                    };
+                    c.people.toString = function () {
+                        return c.toString(1) + ".people (stub)"
+                    };
+                    i = "disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
+                    for (g = 0; g < i.length; g++)f(c, i[g]);
+                    b._i.push([a, e, d])
+                };
+                b.__SV = 1.2;
+                a = e.createElement("script");
+                a.type = "text/javascript";
+                a.async = !0;
+                a.src = ("https:" === e.location.protocol ? "https:" : "http:") + '//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';
+                f = e.getElementsByTagName("script")[0];
+                f.parentNode.insertBefore(a, f)
+            }
+        })(document, window.mixpanel || []);
+        mixpanel.init("b8f279f309ff018a6cf07375fe4e59aa", {cross_subdomain_cookie: false, persistence: 'localStorage', persistence_name: 'gs', cookie_expiration: 10});
+    </script>
+  <style wix-style="">.Title{ font:normal normal bold 36px/1.4em spinnaker,sans-serif; } .Menu{ font:normal normal normal 15px/1.4em tahoma,tahoma-w01-regular,tahoma-w02-regular,tahoma-w10-regular,tahoma-w15--regular,tahoma-w99-regular,sans-serif; } .Page-title{ font:normal normal bold 65px/1.4em spinnaker,sans-serif; } .Heading-XL{ font:normal normal bold 65px/1.4em spinnaker,sans-serif; } .Heading-L{ font:normal normal bold 30px/1.4em spinnaker,sans-serif; } .Heading-M{ font:normal normal normal 22px/1.4em spinnaker,sans-serif; } .Heading-S{ font:normal normal bold 19px/1.4em spinnaker,sans-serif; } .Body-L{ font:normal normal bold 15px/1.4em spinnaker,sans-serif; } .Body-M{ font:normal normal normal 14px/1.4em spinnaker,sans-serif; } .Body-S{ font:normal normal normal 11px/1.4em spinnaker,sans-serif; } .Body-XS{ font:normal normal normal 11px/1.4em spinnaker,sans-serif; } }</style><link type="text/css" rel="stylesheet" href="./css(1)" id="wix-google-fonts"><link type="text/css" rel="stylesheet" href="./latin.css"></head>
+  <body resize="">
+<script type="text/javascript" src="./wix.min.js"></script>
+    <!-- Add your site or application content here -->
+    <div class="container">
+      <get-subscribers><!-- ngIf: !main.hideFormIfPopupIsOpen() && !main.hideForm --><div class="app-container ng-scope strip layout-vertical" ng-class="[main.getStyle()[&#39;skin&#39;], main.getStyle()[&#39;layout&#39;], main.popupBackground()]" ng-if="!main.hideFormIfPopupIsOpen() &amp;&amp; !main.hideForm">
+  <div class="layout-specific-attribute"></div>
+  <div class="app-view" ng-class="{&#39;success-view-shown&#39;: main.subscribeIsSuccessful}">
+    <div class="header-block align-header-left" ng-class="main.getStyle()[&#39;headerAlignment&#39;]">
+      <!-- ngIf: main.isInPopup() -->
+      <!-- ngIf: main.settings.signupForm.showTitle && !main.isInPopup() --><div class="title-row ng-binding ng-scope" ng-if="main.settings.signupForm.showTitle &amp;&amp; !main.isInPopup()">
+        Join our mailing list
+      </div><!-- end ngIf: main.settings.signupForm.showTitle && !main.isInPopup() -->
+      <!-- ngIf: main.isInPopup() -->
+      <!-- ngIf: main.settings.signupForm.showSubtitle && main.settings.signupForm.showTitle && !main.isInPopup() --><div class="subtitle-row ng-binding ng-scope" ng-if="main.settings.signupForm.showSubtitle &amp;&amp; main.settings.signupForm.showTitle &amp;&amp; !main.isInPopup()">
+        For Next Class News
+      </div><!-- end ngIf: main.settings.signupForm.showSubtitle && main.settings.signupForm.showTitle && !main.isInPopup() -->
+      <!-- ngIf: main.settings.popup.showSubtitle && main.isInPopup() -->
+    </div>
+    <div class="collectable-info align-body-left" ng-class="main.getStyle()[&#39;bodyAlignment&#39;]">
+      <!-- ngIf: main.settings.generalSettings.collectName -->
+      <!-- ngIf: main.generalSettings.collectPhone -->
+      <div class="email-info-block">
+        <span class="label-block">
+          <label class="field-description-label email-label ng-binding">
+            Email
+          </label>
+        </span>
+        <div class="email-block input-block" ng-class="{invalid: !main.validEmail}">
+          <i class="fa fa-envelope-o email-icon icon"></i>
+          <input class="email-input info-input ng-pristine ng-untouched ng-valid ng-valid-email" ng-class="{invalid: !main.validEmail}" ng-model="main.subscriberEmail" placeholder="Email Address" type="email">
+        </div>
+      </div>
+      <!-- ngIf: !main.isInPopup() --><div class="button-block ng-scope align-button-left" ng-class="main.getStyle()[&#39;buttonAlignment&#39;]" ng-if="!main.isInPopup()">
+        <button class="wix-button subscribe-button ng-binding" ng-click="main.subscribe()" ng-disabled="main.isPreview()">
+          Subscribe Now
+        </button>
+      </div><!-- end ngIf: !main.isInPopup() -->
+      <!-- ngIf: main.isInPopup() -->
+    </div>
+    <!-- ngIf: main.showError -->
+  </div>
+  <!-- ngInclude: 'modules/widget/upgrade-view.html' --><div ng-include="&#39;modules/widget/upgrade-view.html&#39;" class="ng-scope"><!-- ngIf: main.isInNeedOfUpgrade() -->
+</div>
+  <!-- ngInclude: 'modules/widget/success-view.html' --><div ng-include="&#39;modules/widget/success-view.html&#39;" class="ng-scope"><div class="success-view-container ng-scope">
+  <!-- ngIf: main.subscribeIsSuccessful && !main.isInEditorOrPreviewMode() && !main.isInPopup() -->
+  <!-- ngIf: main.subscribeIsSuccessful && main.isInEditorOrPreviewMode() && !main.isInPopup() -->
+  <!-- ngIf: main.subscribeIsSuccessful && main.isInEditorOrPreviewMode() && main.isInPopup() -->
+  <!-- ngIf: main.subscribeIsSuccessful && !main.isInEditorOrPreviewMode() && main.isInPopup() -->
+</div>
+</div>
+</div><!-- end ngIf: !main.hideFormIfPopupIsOpen() && !main.hideForm -->
+</get-subscribers>
+    </div>
+
+    <script src="./jquery.min.js"></script>
+    <script src="./angular.min.js"></script>
+    <script src="./angular-translate.js"></script>
+    <script src="./angular-locale_en.js"></script>
+    <script src="./angular-translate-loader-static-files.min.js"></script>
+    <script src="./wix-angular.js"></script>
+    <!-- <script src="//static.parastorage.com/services/shoutout-get-subscriber/1.95.0/bower_components/wix-style/dist/scripts/scripts.js"></script> -->
+    <!-- <script src="//static.parastorage.com/services/shoutout-get-subscriber/1.95.0/bower_components/wix-style/dist/scripts/locale/messages_en.js"></script> -->
+    <script src="./bootstrap.min.js"></script>
+    <script src="./ng-lodash.min.js"></script>
+    <script src="./angular-local-storage.min.js"></script>
+    <!--  -->
+<script src="./messages_en.js"></script>
+<!--  -->
+    <!--  -->
+<script src="./modules.js"></script>
+<!--  -->
+    <!--  -->
+<script src="./scripts.js"></script>
+<!--  -->
+
+    <!--  -->
+    <!-- <script src="//static.parastorage.com/services/shoutout-get-subscriber/1.95.0/modules/widget/viewer.html.js"></script> -->
+    <script src="./main.html.js"></script>
+    <script src="./success-view.html.js"></script>
+    <script src="./upgrade-view.html.js"></script>
+
+    <script>
+    angular.module('shoutoutGetSubscriberApp').requires.push('shoutoutGetSubscriberPreload');
+    angular.module('shoutoutGetSubscriberApp').requires.push('pascalprecht.translate');
+
+      angular.module('shoutoutGetSubscriberApp')
+        .config(function (wixAngularTopologyProvider, experimentManagerProvider, $translateProvider) {
+          wixAngularTopologyProvider.setStaticsUrl('//static.parastorage.com/services/shoutout-get-subscriber/1.95.0/');
+          experimentManagerProvider.setExperiments(JSON.parse('{}'));
+          window.apiUrl = '/_api/shoutout-get-subscriber-server-webapp';
+          window.metasiteId = '60fb0d70-46c0-41fc-824c-e15ed2cf41ed';
+          window.defaultLocale = 'en';
+          window.ownerId = '15d86466-f1b3-4857-8a16-815df27669f9';
+          var languagePath = wixAngularTopologyProvider.getStaticsUrl() +
+              'scripts/locale/get-subscribers/messages_';
+          $translateProvider.useStaticFilesLoader({
+                prefix: languagePath,
+                suffix: '.json'
+              });
+        });
+    </script>
+
+    
+
+  
+
+</body></html>
