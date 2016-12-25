@@ -358,7 +358,7 @@ section h3.section-subheading {
     font-size: 40px;
     margin-top: 0;
     margin-bottom: 15px;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
   }
   section h3.section-subheading {
     font-size: 20px;
